@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="/static/blog.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1fdba798f.js" crossorigin="anonymous"></script>
+    
+    <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <title>web site Math Maker</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class=" cabecalho1">
+      <form action="/imagem" method = "post"><button class="click"><img class="cabeçalho-imagem mx-4" src="/static/image/mathmakersem.png" alt="logo da empresa MathMaker"></button></form>
+      <div class="cabecalho1_1">
+        <h5 class="numero_tele"><i class="fa-solid fa-square-phone"></i>+55 (11) 93483-8011</h5>
+        <form class="search" action="{{ url_for('index1') }}" method = "post">
+          <input type="text" class="pesquise" name="name" placeholder="Pesquise por Área de Atuação..." required>
+          <button type="submit" class="button"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="cabecalho_2">
+      <nav class="navigation">
+        <ul class="menu">
+          <li class="active"><form action="/clicar1" method = "post"><button class="menuconfig">Home</button></form></li>
+          <li>
+            <a href="#">Portfólio <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="submenu pages">
+              <div class="col">
+                <ul>
+                  <li><form action="/clicar2" method = "post"><button class="menuconfig">Modelagem</button></form></li>
+                  <li><form action="/clicar3" method = "post"><button class="menuconfig">Impressão 3D</button></form></li>
+                  <li><form action="/clicar4" method = "post"><button class="menuconfig">Robótica e Eletrônica</button></form></li>
+               </ul>
+              </div>
+            </div>
+          </li>
+          <li><form action="/clicar5" method = "post"><button class="menuconfig">Blog</button></form></li>
+          <li><form action="/clicar6" method = "post"><button class="menuconfig">História</button></form></li>
+          <li><form action="/clicar7" method = "post"><button class="menuconfig">Contato</button></form></li>
+        </ul>
+        <div class="links">
+          <a href="https://www.facebook.com/MathMakerr"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=5511934838011&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%3F"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/_mathmaker/?hl=pt-br"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <h1>Blog</h1>
+  <h2>O que é impressão 3D?</h2>
+  <p>A impressão 3D ou manufatura aditiva é um processo de fabricação de objetos sólidos tridimensionais a partir de um arquivo digital.</p>
+  <p>A criação de um objeto impresso em 3D é conseguida usando processos aditivos. Em um processo aditivo, um objeto é criado colocando camadas sucessivas de material até que o objeto seja criado. Cada uma dessas camadas pode ser vista como uma seção transversal do objeto em fatias finas.</p>
+  <p>A impressão 3D é o oposto da fabricação subtrativa, que é cortar / esvaziar um pedaço de metal ou plástico com, por exemplo, uma fresadora.</p>
+  <p>A impressão 3D permite que você produza formas complexas usando menos material do que os métodos tradicionais de fabricação.</p>
+  <h2>Como funciona a impressão 3D?</h2>
+  <p>Tudo começa com um modelo 3D. Você pode optar por criar um do zero ou baixá-lo de uma biblioteca 3D.</p>
+  <h3>Software 3D</h3>
+  <p>Existem muitas ferramentas de software diferentes disponíveis. De nível industrial a código aberto. Criamos uma visão geral em nossa página de software 3D .</p>
+  <p>Muitas vezes recomendamos que os iniciantes comecem com o Tinkercad . O Tinkercad é gratuito e funciona no seu navegador, você não precisa instalá-lo no seu computador. O Tinkercad oferece aulas para iniciantes e possui um recurso integrado para exportar seu modelo como um arquivo imprimível, por exemplo, .STL ou .OBJ.</p>
+  <p>Agora que você tem um arquivo imprimível, o próximo passo é prepará-lo para sua impressora 3D. Isso é chamado de fatiamento.</p>
+  <h3>Fatiar: de arquivo imprimível para impressora 3D</h3>
+  <p>Fatiar basicamente significa fatiar um modelo 3D em centenas ou milhares de camadas e é feito com software de fatiamento .</p>
+  <p>Quando seu arquivo é fatiado, ele está pronto para sua impressora 3D. A alimentação do arquivo para sua impressora pode ser feita via USB, SD ou Wi-Fi. Seu arquivo fatiado agora está pronto para ser impresso em 3D camada por camada .</p>
+  <h2>Exemplos de impressão 3D</h2>
+  <p>A impressão 3D abrange muitas formas de tecnologias e materiais, pois a impressão 3D está sendo usada em quase todos os setores que você possa imaginar. É importante vê-lo como um cluster de diversos setores com uma infinidade de aplicações diferentes .</p>
+  <p>Alguns exemplos:</p>
+  <p>– produtos de consumo (óculos, calçados, design, móveis)</p>
+  <p>– produtos industriais (ferramentas de fabricação, protótipos, peças funcionais de uso final)</p>
+  <p>- produtos odontológicos</p>
+  <p>– próteses</p>
+  <p>– maquetes e maquetes arquitetônicas</p>
+  <p>- reconstrução de fósseis</p>
+  <p>- replicando artefatos antigos</p>
+  <p>– reconstrução de evidências em patologia forense</p>
+  <p class="fim">- adereços de filmes</p>
+  <section class="prerodape">
+    <h1 class="prerodape_texto">ENVIE PARA NOS SEU PEDIDO</h1>
+  </section>
+  <footer class="rodape">
+    <section class="rodape-contato">
+      <div class="info">
+        <h3 class="rodape-contato-INFO">Auxiliamos em todas as etapas do seu projeto de Impressão 3D</h3>
+      </div>
+      <div class="info"><h4 class="rodape-contato-titulo">Formas de contato</h4>
+        <section class="rodape-contato1">
+          <h5 class="rodape-contato-paragrafo"><i class="fa-solid fa-square-phone"></i>+55 (11) 93483-8011</h5>
+        </section>
+        <section class="rodape-contato1">
+          <h5 class="rodape-contato-paragrafo"><i class="fa-solid fa-envelope"></i>math.maker.3d@gmail.com</h5>
+        </section>
+        <section class="rodape-contato1">
+          <a href="https://www.facebook.com/MathMakerr" class="icone"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=5511934838011&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%3F" class="icone"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/_mathmaker/?hl=pt-br" class="icone"><i class="fa-brands fa-instagram"></i></a>
+        </section>
+        <h4 class="rodape-contato-titulo">Localização</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.3781445125662!2d-46.54953687082557!3d-23.693382870976695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce423694374fef%3A0x66399d5cd0b1cafd!2sAv.%20Pereira%20Barreto%20-%20Baeta%20Neves%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009751-251!5e0!3m2!1spt-BR!2sbr!4v1645563943936!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+      </div>
+    </section>
+    <section class="rodape-forms">
+      <div>
+        <h1 id="titulo">Preencha o formulário para solicitar um orçamento</h1>
+        <br>
+      </div>
+      <form class="form" action="https://formsubmit.co/math.maker.3d@gmail.com" method="POST">
+        <fieldset class="grupo">        
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name='name' id="name" required>
+            </div>
+            <div class="campo">
+              <label for="tel"><strong>Número</strong></label>
+              <input type="tel" name="phone" id="phone" required>
+          </div>
+        </fieldset> 
+        <fieldset class="grupo">          
+          <div class="campo">
+              <label for="email"><strong>Email</strong></label>
+              <input type="email" name='email' id="email" required>
+          </div>
+          <div class="campo">
+            <label for="local"><strong>Local(Estado):</strong></label>
+            <input type="text" name='Localização' id="Localização" required>
+        </div>
+        </fieldset> 
+        <div class="campo" id="arquivo">  
+          <label for="myfile"><strong>Selecione um arquivo:</strong></label>
+          <input type="file" id="myfile" name="myfile">
+        </div>
+        <fieldset>
+          <div class="campo">
+            <label for="Assunto"><strong>Serviço desejado</strong></label>
+            <div class="area_atuacao">
+              <input type = "checkbox" id = "Assunto" name = "Assunto" value = "Modelagem_3D" >
+              <label for = "Modelagem3D"> Modelagem 3D </label><br>
+
+              <input type = "checkbox" id = "Assunto" name = "Assunto" value = "Impressão_3D">
+              <label for = "Impressão3D"> Impressão 3D </label><br>
+
+              <input type = "checkbox" id = "Assunto" name = "Assunto" value = "Robótica_Eletrônica">
+              <label for = "RobóticaEletrônica"> Robótica e Eletrônica </label><br>
+            </div>
+          </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <label for="message"><strong>Mensagem: </strong></label>
+            <textarea rows="6" style="width: 26em" id="message" name='message'></textarea>
+        </div>
+
+        <button class="botao" type="submit">Enviar</button>            
+
+      </form>
+    </section>
+  </footer> 
+</body>
+</html>
